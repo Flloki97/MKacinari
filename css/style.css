@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+    Primary bcg color : #0C0C0C
+    Txt color : #000
+
+    font: Romanus:  Regular, 
+          Helvetica neue: Light
+*/
+
+@font-face {
+    font-family: Romanus;
+    src: url("../fonts/ROMANUS.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Helvetica;
+    font-weight: light;
+    src: url("../fonts/HelveticaNeueLight.otf") format("opentype");
+}
+
