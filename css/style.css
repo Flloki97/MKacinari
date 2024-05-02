@@ -6,7 +6,7 @@
 
 /*
     Primary bcg color : #0C0C0C
-    Txt color : #000
+    Txt color : #fff
 
     font: Romanus:  Regular, 
           Helvetica neue: Light
@@ -22,4 +22,43 @@
     font-weight: light;
     src: url("../fonts/HelveticaNeueLight.otf") format("opentype");
 }
+
+.wrapper {
+    background-color: #0C0C0C;
+    color: #fff;
+}
+
+nav.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.logo h1 {
+    font-size: 80px;
+    font-family: Romanus;
+    font-weight: lighter;
+}
+
+.menu-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu-container ul li {
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+.menu-container ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
