@@ -60,5 +60,14 @@ nav.menu-container {
     text-decoration: none;
 }
 
+.hero-container {
+    height: calc(100vh - 115px);
+    background-image: url("../img/kkey-icon.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
+
 
 
