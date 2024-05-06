@@ -379,3 +379,22 @@ footer {
 .copyright-wrapper p {
     font-family: HelveticaL;
 }
+
+#soundControl {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+
+#toggleButton {
+    border: none;
+}
+
+#toggleButton:hover {
+    background: none;
+    color: none;
+}
+
+#toggleButton img {
+    width: 40px;
+}
