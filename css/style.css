@@ -79,6 +79,7 @@ nav.menu-container {
     /* justify-content: space-between; */
     align-items: center;
     padding: 40px 0;
+    margin-bottom: 30px;
 }
 
 .left-hero-side,
@@ -112,7 +113,7 @@ nav.menu-container {
 }
 
 .line {
-    width: 250px;
+    width: 200px;
     height: 2px;
     background-color: #fff;
 }
@@ -129,7 +130,7 @@ nav.menu-container {
     font-size: 18px;
 }
 
-.right-hero-side button {
+button {
     padding: 8px 25px;
     background-color: transparent;
     border: 2px solid #fff;
@@ -143,9 +144,186 @@ nav.menu-container {
     transition: 0.5s;
 }
 
-.right-hero-side button:hover {
+button:hover {
     background-color: #e4e4e4;
     border: 2px solid #000;
     color: #000;
 }
 
+.activity-container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    padding: 0px 0px 40px 0;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+}
+
+.activity-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.item,
+.overlay-item {
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-1 {
+    background-image: url("../img/Dirigjenti_Mark_crop.jpg");
+}
+
+.item-2 {
+    background-image: url("../img/M._Kacinari_me_orkestren_e_RTK.jpg");
+}
+
+.item-3 {
+    background-image: url("../img/Fotografi_e_Mark_Kaçinari_me_orkestren_e_RTK_dhe_korin__Collegium_Cantorum_.jpg");
+}
+
+.overlay-item {
+    padding: 10px 10px 20px 10px;
+    background-color: #2626267e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 15px;
+}
+
+.overlay-item h4 {
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.activity-carousel a {
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.activity-carousel a:hover {
+    transform: scale(1.05);
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.activity-carousel {
+    padding-bottom: 20px;
+}
+
+.activity-onl-container {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.bcg-line {
+    width: 100%;
+    height: 1px;
+    background: #b8b8b8ab;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 230px;
+    text-align: center;
+    align-self: center;
+}
+
+.line-item h1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.line-item p {
+    font-size: 22px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    position: relative;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 50%;
+}
+
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certf-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.certf-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.certf-item img {
+    width: 100px;
+}
+
+.certf-item h3 {
+    width: 60%;
+}
