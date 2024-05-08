@@ -7,91 +7,91 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Romanus;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Romanus;
 }
 
 @font-face {
-    font-family: Romanus;
-    src: url("../fonts/ROMANUS.otf") format("opentype");
+  font-family: Romanus;
+  src: url("../fonts/ROMANUS.otf") format("opentype");
 }
 
 @font-face {
-    font-family: HelveticaC;
-    font-weight: light;
-    src: url("../fonts/HelveticaNeueLight.otf") format("opentype");
+  font-family: HelveticaC;
+  font-weight: light;
+  src: url("../fonts/HelveticaNeueLight.otf") format("opentype");
 }
 
 @font-face {
-    font-family: HelveticaL;
-    font-weight: 100;
-    src: url("../fonts/HelveticaNeueUltraLight.otf") format("opentype");
+  font-family: HelveticaL;
+  font-weight: 100;
+  src: url("../fonts/HelveticaNeueUltraLight.otf") format("opentype");
 }
 
 .wrapper {
-    background-color: #0C0C0C;
-    color: #fff;
+  background-color: #0c0c0c;
+  color: #fff;
 }
 
 nav.menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background: #0c0c0c;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-    height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: #0c0c0c;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  height: 67px;
 }
 
 .logo h1 {
-    font-size: 40px;
-    font-family: Romanus;
-    font-weight: lighter;
+  font-size: 40px;
+  font-family: Romanus;
+  font-weight: lighter;
 }
 
 .menu-container ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
 }
 
 .menu-container ul li {
-    font-size: 15px;
-    font-family: HelveticaC;
-    font-weight: lighter;
+  font-size: 15px;
+  font-family: HelveticaC;
+  font-weight: lighter;
 }
 
 .menu-container ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: HelveticaL;
-    letter-spacing: 0.1rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: HelveticaL;
+  letter-spacing: 0.1rem;
 }
 
 .hero-container {
-    height: calc(100vh - 115px);
-    background-image: url("../img/keyyy.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    margin-bottom: 30px;
-    margin-top: 67px;
+  height: calc(100vh - 115px);
+  background-image: url("../img/keyyy.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  margin-top: 67px;
 }
 
 .left-hero-side,
 .right-hero-side {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 /* .left-hero-side {
@@ -102,471 +102,519 @@ nav.menu-container {
 } */
 
 .right-hero-side {
-    width: 40%;
+  width: 40%;
 }
 
 .left-hero-side img {
-    width: 60%;
-    margin-left: -50px;
+  width: 60%;
+  margin-left: -50px;
 }
 
 .right-hero-side {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .line {
-    width: 200px;
-    height: 2px;
-    background-color: #fff;
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
 }
 
 .right-hero-side h2 {
-    font-size: 50px;
-    font-weight: 200;
+  font-size: 50px;
+  font-weight: 200;
 }
 
 .right-hero-side p {
-    font-family: HelveticaL;
-    letter-spacing: 0.3px;
-    color: #fff;
-    font-size: 18px;
+  font-family: HelveticaL;
+  letter-spacing: 0.3px;
+  color: #fff;
+  font-size: 18px;
 }
 
 button {
-    padding: 8px 25px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    color: #fff;
-    font-size: 15px;
-    font-family: HelveticaL;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: HelveticaL;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 button:hover {
-    background-color: #e4e4e4;
-    border: 2px solid #000;
-    color: #000;
+  background-color: #e4e4e4;
+  border: 2px solid #000;
+  color: #000;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    padding: 0px 0px 40px 0;
-    letter-spacing: 0.1rem;
-    font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  padding: 0px 0px 40px 0;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
 }
 
 .activity-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .item,
 .overlay-item {
-    width: 250px;
-    height: 300px;
-    border-radius: 30px;
-    
+  width: 250px;
+  height: 300px;
+  border-radius: 30px;
 }
 
 .item-1,
 .item-2,
 .item-3 {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-1 {
-    background-image: url("../img/Dirigjenti_Mark_crop.jpg");
+  background-image: url("../img/Dirigjenti_Mark_crop.jpg");
 }
 
 .item-2 {
-    background-image: url("../img/M._Kacinari_me_orkestren_e_RTK.jpg");
+  background-image: url("../img/M._Kacinari_me_orkestren_e_RTK.jpg");
 }
 
 .item-3 {
-    background-image: url("../img/Fotografi_e_Mark_Kaçinari_me_orkestren_e_RTK_dhe_korin__Collegium_Cantorum_.jpg");
+  background-image: url("../img/Fotografi_e_Mark_Kaçinari_me_orkestren_e_RTK_dhe_korin__Collegium_Cantorum_.jpg");
 }
 
 .overlay-item {
-    padding: 10px 10px 20px 10px;
-    background-color: #2626267e;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
-    gap: 15px;
+  padding: 10px 10px 20px 10px;
+  background-color: #2626267e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 15px;
 }
 
 .overlay-item h4 {
-    font-size: 20px;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .activity-carousel a {
-    transform: scale(1);
-    transition: all .3s;
+  transform: scale(1);
+  transition: all 0.3s;
 }
 
 .activity-carousel a:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .activity-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .activity-carousel {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .activity-onl-container {
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
 }
 
 .bcg-line {
-    width: 100%;
-    height: 1px;
-    background: #b8b8b8ab;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: 1px;
+  background: #b8b8b8ab;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .line-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 230px;
-    text-align: center;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 230px;
+  text-align: center;
+  align-self: center;
 }
 
 .line-item h1 {
-    font-size: 40px;
-    font-weight: 100;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .line-item p {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    margin-top: -20px;
-    position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  position: relative;
 }
 
 .circle::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid rgb(165, 165, 165);
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 50%;
 }
 
 .certifications-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .certifications-container h1 {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .certf-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .certf-item {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    padding-bottom: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 50px;
 }
 
 .certf-item img {
-    width: 100px;
+  width: 100px;
 }
 
 .certf-item h3 {
-    width: 70%;
+  width: 70%;
 }
 
 .certf-item h3,
 .certf-item p {
-    font-weight: 100;
-    letter-spacing: 0.05rem;
+  font-weight: 100;
+  letter-spacing: 0.05rem;
 }
 
 .music-symbol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    border-left: 7px solid rgb(113, 113, 113);;
-    border-right: 7px solid rgb(113, 113, 113);
-    position: relative;
-    margin: 100px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-left: 7px solid rgb(113, 113, 113);
+  border-right: 7px solid rgb(113, 113, 113);
+  position: relative;
+  margin: 100px 0px 10px 0px;
 }
 
 .pentagram-lines {
-    width: 100%;
-    height: 1px;
-    background: rgb(113, 113, 113);;
+  width: 100%;
+  height: 1px;
+  background: rgb(113, 113, 113);
 }
 
 .musickey {
-    width: 50px;
-    position: absolute;
-    background-color: #0C0C0C;
+  width: 50px;
+  position: absolute;
+  background-color: #0c0c0c;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .copyright-wrapper p {
-    font-family: HelveticaL;
+  font-family: HelveticaL;
 }
 
 #soundControl {
-    position: absolute;
-    right: 50px;
-    bottom: 40px;
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
 }
 
 #toggleButton {
-    border: none;
+  border: none;
 }
 
 #toggleButton:hover {
-    background: none;
-    color: none;
+  background: none;
+  color: none;
 }
 
 #toggleButton img {
-    width: 40px;
+  width: 40px;
 }
 
 canvas {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    right: 70px;
-    bottom: 40px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  right: 70px;
+  bottom: 40px;
 }
 
 #dialog {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dialog-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000;
 }
 
 .dialog-wrapper p {
-    font-size: 5vw;
-    padding-bottom: 15px;
+  font-size: 5vw;
+  padding-bottom: 15px;
 }
 
 .button-wrapper {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .swiper {
-    width: 100%;
-    height: 400px;
-    margin: 80px 0px;
+  width: 100%;
+  height: 400px;
+  margin: 80px 0px;
 }
 
 .swiper-slide {
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .slide-1 {
-    background: url("../img/Dirigjenti_Mark_crop.jpg");
+  background: url("../img/Dirigjenti_Mark_crop.jpg");
 }
 
 .slide-2 {
-    background: url("../img/Fotografi_e_Mark_Kaçinari_me_orkestren_e_RTK_dhe_korin__Collegium_Cantorum_.jpg");
+  background: url("../img/Fotografi_e_Mark_Kaçinari_me_orkestren_e_RTK_dhe_korin__Collegium_Cantorum_.jpg");
 }
 
 .slide-3 {
-    background: url("../img/MarkKacinari.png");
-    background-position: top center !important;
+  background: url("../img/MarkKacinari.png");
+  background-position: top center !important;
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-
-}
-
-@media (max-width: 716px) {
-    .menu-container ul {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
 }
 
 .btn1 {
-    /* position: absolute; */
-    width: 60px;
-    height: 60px;
-    top: 100px;
-    left: 0px;
-    transition-duration: 0.5s;
+  /* position: absolute; */
+  width: 30px;
+  height: 60px;
+  top: 100px;
+  left: 0px;
+  transition-duration: 0.5s;
+}
+.btn1 .icon-left {
+  transition-duration: 0.5s;
+  position: relative;
+  height: 2px;
+  width: 15px;
+  top: 30px;
+  background-color: #ffffff;
+  left: 0px;
+}
+.btn1 .icon-left:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  top: -12px;
+}
+.btn1 .icon-left:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  top: 12px;
+}
+.btn1 .icon-left:hover {
+  cursor: pointer;
+}
+.btn1 .icon-right {
+  transition-duration: 0.5s;
+  position: relative;
+  height: 2px;
+  width: 15px;
+  top: 28px;
+  background-color: #ffffff;
+  left: 15px;
+}
+.btn1 .icon-right:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  top: -12px;
+}
+.btn1 .icon-right:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  top: 12px;
+}
+.btn1.open .icon-left {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-left:before {
+  transform: rotateZ(45deg) scaleX(1.4) translate(3px, 3px);
+}
+.btn1.open .icon-left:after {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(3px, -3px);
+}
+.btn1.open .icon-right {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-right:before {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-3px, 3px);
+}
+.btn1.open .icon-right:after {
+  transform: rotateZ(45deg) scaleX(1.4) translate(-3px, -3px);
+}
+.btn1:hover {
+  cursor: pointer;
+}
+
+/* Responsive Desigm */
+
+@media (max-width: 716px) {
+  /* .menu-container ul {
+        display: none;
+        position: absolute;
+        top: 67px;
+        width: 100%;
+        left: 0;
+        height: calc(100vh - 67px);
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: red; 
+    } */
+
+  .desktop-list {
+    display: none !important;
   }
-  .btn1 .icon-left {
-    transition-duration: 0.5s;
-    position: relative;
-    height: 4px;
-    width: 20px;
-    top: 30px;
-    background-color: #ffffff;
-    left: 0px;
-  }
-  .btn1 .icon-left:before {
-    transition-duration: 0.5s;
+
+  .mobile-menu ul {
     position: absolute;
-    width: 20px;
-    height: 4px;
-    background-color: #ffffff;
-    content: "";
-    top: -20px;
+    top: 67px;
+    width: 100%;
+    left: 0;
+    height: calc(100vh - 67px);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #0C0C0C;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Push links up initially */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions for container and links */
+    z-index: 2;
   }
-  .btn1 .icon-left:after {
-    transition-duration: 0.5s;
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    background-color: #ffffff;
-    content: "";
-    top: 20px;
+
+  .mobile-menu {
+    display: block;
   }
-  .btn1 .icon-left:hover {
-    cursor: pointer;
+} 
+
+.mobile-menu ul.open-menu {
+    display: flex;
+    opacity: 1; /* Fading in */
+    transform: translateY(0); /* Move links down */
+}
+  
+.mobile-menu ul li {
+    transition: opacity 0.5s ease; /* Smooth transition for list items */
   }
-  .btn1 .icon-right {
-    transition-duration: 0.5s;
-    position: relative;
-    height: 4px;
-    width: 20px;
-    top: 26px;
-    background-color: #ffffff;
-    left: 20px;
+  
+  .mobile-menu ul.open-menu li {
+    opacity: 1; /* Fading in list items */
   }
-  .btn1 .icon-right:before {
-    transition-duration: 0.5s;
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    background-color: #ffffff;
-    content: "";
-    top: -20px;
-  }
-  .btn1 .icon-right:after {
-    transition-duration: 0.5s;
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    background-color: #ffffff;
-    content: "";
-    top: 20px;
-  }
-  .btn1.open .icon-left {
-    transition-duration: 0.5s;
-    background: transparent;
-  }
-  .btn1.open .icon-left:before {
-    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
-  }
-  .btn1.open .icon-left:after {
-    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
-  }
-  .btn1.open .icon-right {
-    transition-duration: 0.5s;
-    background: transparent;
-  }
-  .btn1.open .icon-right:before {
-    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
-  }
-  .btn1.open .icon-right:after {
-    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
-  }
-  .btn1:hover {
-    cursor: pointer;
-  }
+
+nav.menu-container,
+.menu {
+    z-index: 1000;
+}

@@ -132,6 +132,9 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-$('.menu').click (function(){
+$('.menu').click(function() {
   $(this).toggleClass('open');
+  setTimeout(function() {
+    $('.mobile-menu ul').toggleClass('open-menu');
+  }, 200); // Adjust delay as needed to match transition timing
 });
