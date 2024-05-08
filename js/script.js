@@ -131,3 +131,7 @@ const swiper = new Swiper('.swiper', {
     delay: 3000,
   }
 });
+
+$('.menu').click (function(){
+  $(this).toggleClass('open');
+});

@@ -463,3 +463,110 @@ canvas {
     background: url("../img/MarkKacinari.png");
     background-position: top center !important;
 }
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 716px) {
+    .menu-container ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.btn1 {
+    /* position: absolute; */
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 0px;
+    transition-duration: 0.5s;
+  }
+  .btn1 .icon-left {
+    transition-duration: 0.5s;
+    position: relative;
+    height: 4px;
+    width: 20px;
+    top: 30px;
+    background-color: #ffffff;
+    left: 0px;
+  }
+  .btn1 .icon-left:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    content: "";
+    top: -20px;
+  }
+  .btn1 .icon-left:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    content: "";
+    top: 20px;
+  }
+  .btn1 .icon-left:hover {
+    cursor: pointer;
+  }
+  .btn1 .icon-right {
+    transition-duration: 0.5s;
+    position: relative;
+    height: 4px;
+    width: 20px;
+    top: 26px;
+    background-color: #ffffff;
+    left: 20px;
+  }
+  .btn1 .icon-right:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    content: "";
+    top: -20px;
+  }
+  .btn1 .icon-right:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    content: "";
+    top: 20px;
+  }
+  .btn1.open .icon-left {
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .btn1.open .icon-left:before {
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  }
+  .btn1.open .icon-left:after {
+    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  }
+  .btn1.open .icon-right {
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .btn1.open .icon-right:before {
+    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  }
+  .btn1.open .icon-right:after {
+    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  }
+  .btn1:hover {
+    cursor: pointer;
+  }
