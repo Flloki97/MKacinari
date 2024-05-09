@@ -61,8 +61,14 @@ const startAnimation = () => {
   });
 };
 
+// Function to start the audio
 const startAudio = () => {
   audio.play(); // Start playing audio
+};
+
+// Function to reset the dialog state for every reload
+const resetDialogState = () => {
+  sessionStorage.removeItem('dialogShown');
 };
 
 // Function to check if the dialog has been shown before in this session
@@ -75,29 +81,32 @@ const markDialogAsShownInSession = () => {
   sessionStorage.setItem('dialogShown', 'true');
 };
 
-// Show the dialog only if it hasn't been shown before in this session
+// Show the dialog on every load
 window.addEventListener("load", () => {
-  if (!hasDialogBeenShownInSession()) {
-    const dialog = document.getElementById('dialog');
-    dialog.style.display = 'block';
+  audio.pause();
+  resetDialogState(); // Reset dialog state
+  const dialog = document.getElementById('dialog');
+  dialog.style.display = 'block';
 
-    // Add event listener to the "Yes" button
-    document.getElementById('yesButton').addEventListener('click', () => {
-      startAnimation(); // Start animation
-      startAudio(); // Start audio
-      dialog.style.display = 'none'; // Hide the dialog
-      markDialogAsShownInSession(); // Mark the dialog as shown for this session
-    });
+  // Add event listener to the "Yes" button
+  document.getElementById('yesButton').addEventListener('click', () => {
+    startAnimation(); // Start animation
+    if (audio.paused) {
+      startAudio(); // Start audio if paused
+    }
+    dialog.style.display = 'none'; // Hide the dialog
+    markDialogAsShownInSession(); // Mark the dialog as shown for this session
+  });
 
-    // Add event listener to the "No" button
-    document.getElementById('noButton').addEventListener('click', () => {
-      startAnimation(); // Start animation without audio
-      dialog.style.display = 'none'; // Hide the dialog
-      markDialogAsShownInSession(); // Mark the dialog as shown for this session
-    });
-  } else {
-    startAnimation(); // Start animation without showing the dialog
-  }
+  // Add event listener to the "No" button
+  document.getElementById('noButton').addEventListener('click', () => {
+    opt.power = false; // Stop animation
+    audio.pause(); // Pause audio
+    opt.sinHeight = 0; // Set sinHeight to flat line
+    render(); // Render flat line
+    dialog.style.display = 'none'; // Hide the dialog
+    markDialogAsShownInSession(); // Mark the dialog as shown for this session
+  });
 });
 
 // Event listener for clicking on the canvas
@@ -123,8 +132,11 @@ c.addEventListener("click", () => {
 });
 
 
+
+
+
+
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   autoplay: {
