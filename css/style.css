@@ -270,11 +270,14 @@ a {
   width: 230px;
   text-align: center;
   align-self: center;
+  top: -15px;
+  position: relative;
 }
 
 .line-item h1 {
-  font-size: 40px;
+  font-size: 58px;
   font-weight: 100;
+  min-height: 80px;
 }
 
 .line-item p {
