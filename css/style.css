@@ -562,6 +562,28 @@ canvas {
   cursor: pointer;
 }
 
+/* .desktop-list a {
+  display: inline-block;
+  position: relative;
+}
+.desktop-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: -4px;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.desktop-list a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
 /* Responsive Desigm */
 
 @media (max-width: 716px) {
@@ -708,7 +730,8 @@ nav.menu-container,
 
     .item,
     .overlay-item {
-        width: 180px;
+        /* width: 180px; */
+        width: 230px;
         height: 260px;
     }
 
@@ -724,3 +747,5 @@ nav.menu-container,
         font-size: 25px;
     }
 }
+
+
