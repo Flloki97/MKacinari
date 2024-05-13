@@ -280,6 +280,7 @@ a {
 .line-item p {
   font-size: 22px;
   height: 30px;
+  word-break: break-word;
 }
 
 .circle {
@@ -562,7 +563,7 @@ canvas {
   cursor: pointer;
 }
 
-/* .desktop-list a {
+.desktop-list a {
   display: inline-block;
   position: relative;
 }
@@ -582,7 +583,7 @@ canvas {
 .desktop-list a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-} */
+}
 
 /* Responsive Desigm */
 
