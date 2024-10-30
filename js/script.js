@@ -131,11 +131,7 @@ c.addEventListener("click", () => {
   }
 });
 
-
-
-
-
-
+/*  SWIPER */
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
