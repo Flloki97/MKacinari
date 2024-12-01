@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirënjohjet</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Kaçinari - Kompozitor</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="wrapper">
+  </head>
+  <body>
+    <main class="wrapper">
+      <div id="dialog" style="display: none;">
+        <div class="dialog-wrapper">
+            <p>Do you want to play sound?</p>
+            <div class="button-wrapper">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+      </div>
       <nav class="menu-container">
         <div class="logo">
           <a href="https://flloki97.github.io/MKacinari/">
@@ -18,9 +27,9 @@
           </a>
         </div>
         <ul class="desktop-list">
-          <li><a href="https://flloki97.github.io/MKacinari/biografia.html">Biografia</a></li>
-          <li><a href="https://flloki97.github.io/MKacinari/veprimtaria.html">Veprimtaria</a></li>
-          <li><a href="https://flloki97.github.io/MKacinari/mirenjohjet.html">Mirënjohjet</a></li>
+          <li><a href="/biografia.html">Biografia</a></li>
+          <li><a href="/veprimtaria.html">Veprimtaria</a></li>
+          <li><a href="/mirenjohjet.html">Mirënjohjet</a></li>
         </ul>
         <div class="mobile-menu">
             <div class="menu btn1" data-menu="1">
@@ -28,16 +37,24 @@
                 <div class="icon-right"></div>
             </div>
             <ul>
-                <li><a href="https://flloki97.github.io/MKacinari/biografia.html">Biografia</a></li>
-                <li><a href="https://flloki97.github.io/MKacinari/veprimtaria.html">Veprimtaria</a></li>
-                <li><a href="https://flloki97.github.io/MKacinari/mirenjohjet.html">Mirënjohjet</a></li>
+                <li><a href="/biografia.html">Biografia</a></li>
+                <li><a href="/veprimtaria.html">Veprimtaria</a></li>
+                <li><a href="/mirenjohjet.html">Mirënjohjet</a></li>
               </ul>
         </div>
       </nav>
-    </div>
-
+      <footer>
+        <div class="logo-wrapper">
+          <h1>M.Kaçinari</h1>
+        </div>
+        <div class="copyright-wrapper">
+          <p>©2024</p>
+        </div>
+      </footer>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+   
+  </body>
 </html>

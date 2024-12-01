@@ -10,16 +10,16 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <main class="wrapper">
       <div id="dialog" style="display: none;">
         <div class="dialog-wrapper">
-            <p>Do you want to play sound?</p>
+            <p>Dëshironi të luani muzikë?</p>
             <div class="button-wrapper">
-                <button id="yesButton">Yes</button>
-                <button id="noButton">No</button>
+                <button id="yesButton">Po</button>
+                <button id="noButton">Jo</button>
             </div>
         </div>
-    </div>
+      </div>
       <nav class="menu-container">
         <div class="logo">
           <a href="https://flloki97.github.io/MKacinari/">
@@ -27,6 +27,7 @@
           </a>
         </div>
         <ul class="desktop-list">
+          <li><a href="/index.html">Ballina</a></li>
           <li><a href="/biografia.html">Biografia</a></li>
           <li><a href="/veprimtaria.html">Veprimtaria</a></li>
           <li><a href="/mirenjohjet.html">Mirënjohjet</a></li>
@@ -37,6 +38,7 @@
                 <div class="icon-right"></div>
             </div>
             <ul>
+                <li><a href="/index.html">Ballina</a></li>
                 <li><a href="/biografia.html">Biografia</a></li>
                 <li><a href="/veprimtaria.html">Veprimtaria</a></li>
                 <li><a href="/mirenjohjet.html">Mirënjohjet</a></li>
@@ -45,7 +47,7 @@
       </nav>
       <div class="hero-container">
         <div class="left-hero-side">
-          <img src="img/portrait.png" alt="portrait" />
+          <img src="img/mark-edit.png" alt="portrait" />
         </div>
         <div class="right-hero-side">
           <span class="line"></span>
@@ -174,10 +176,11 @@
           <p>©2024</p>
         </div>
       </footer>
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/audio-player.js"></script>
    
   </body>
 </html>

@@ -407,11 +407,14 @@ footer {
 
 canvas {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   right: 70px;
-  bottom: 40px;
+  bottom: -20px;
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 #dialog {
@@ -641,6 +644,263 @@ nav.menu-container,
 .menu {
   z-index: 1000;
 }
+
+
+/***************************  Biografi CSS Start  **************************/
+.all-padd {
+  padding: 20px 50px;
+}
+
+.breadcrumb {
+  margin-top: 67px;
+  min-height: 250px;
+  background-image: url("../img/img054-fotor-20241113193121.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.breadcrumb-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.361);
+}
+
+.breadcrumb-txt {
+  font-size: 4em;
+  z-index: 9;
+}
+
+.bio-first-section,
+.bio-sec-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 80px 50px;
+}
+
+/* .bio-sec-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.17;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg/key-notes.png");
+  background-position: top center;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(12,12,12,1) 0%, rgba(12,12,12,1) 2%, rgba(255,255,255,0) 41%), url(../img/bg/key-notes.png) no-repeat top center;
+  background-size: cover;
+} */
+
+.left-side-wrapper {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side,
+.left-side-sec {
+  position: relative;
+}
+
+.right-side,
+.right-side-sec {
+  margin-left: 30px;
+  padding-right: 50px;
+  width: 50%;
+}
+
+.right-side h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.right-side p {
+  font-size: 20px;
+  letter-spacing: 1.3px;
+}
+
+.left-side img,
+.left-side-sec img {
+  max-height: 400px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.text-wrapper p {
+  color: #fff;
+  /* font-family: HelveticaC; */
+  letter-spacing: 2px;
+}
+
+/* .right-side-sec {
+  margin-left: 0px;
+  margin-right: 100px;
+} */
+
+.left-side::before, 
+.left-side-sec::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #3a3a3a;
+  transition: all .3s ease;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.left-side::before {
+  -webkit-transform: translate3d(-22px, -20px, 0);
+  transform: translate3d(-22px, -20px, 0);
+}
+
+.left-side-sec::before {
+  -webkit-transform: translate3d(22px, -20px, 0);
+  transform: translate3d(22px, -20px, 0);
+}
+
+.font-classic {
+  font-family: HelveticaL;
+}
+
+.order-2 {
+  order: 2;
+} 
+
+.order-1 {
+  order: 1;
+}
+
+
+/***************************  Biografi CSS End  **************************/
+
+/*************************** Veprimtaria CSS Start ***********************/
+
+.veprimtaria {
+  background-image: url('../img/bg/img033-fotor-20241113191810 (1).jpg');
+  background-position: 10% 36%;
+}
+
+.veprimtaria-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .main-img-wrapper {
+  width: 600px;
+  height: 770px;
+  background-image: url('../img/bg/image (2).png');
+  background-position: center;
+  background-size: cover;
+} */
+
+.main-img-wrapper img {
+  max-width: 450px;
+  padding-inline: 30px;
+}
+
+.left-side-veprimtaria p,
+.right-side-veprimtaria p {
+  /* line-height: 1.5em; */
+  font-size: 22px;
+  letter-spacing: .05em;
+}
+
+.right-side-veprimtaria p {
+  text-align: center;
+}
+
+.left-side-veprimtaria,
+.right-side-veprimtaria,
+.main-img-wrapper {
+  width: 33%;
+}
+
+.main-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.left-side-veprimtaria p::first-letter {
+  font-size: 4em;
+  padding: 0;
+  float: left;
+  margin-top: -7px;
+  clear: both;
+}
+
+.veprimtaria-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+/* .vp-b-wrapper {
+  width: 60%;
+} */
+
+.vp-b-wrapper-text {
+  font-size: 22px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.lista-e-veprave {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 30px;
+}
+
+.veprat-korale-lista {
+  /* display: flex;
+  gap: 20px;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.veprat-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.veprat-wrapper h5 {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** Veprimtaria CSS End ***********************/
 
 
 @media (max-width: 716px) {
