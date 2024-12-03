@@ -23,3 +23,4 @@ $('.menu').click(function() {
     $('.mobile-menu ul li a').css('transition-delay', '');
   }
 });
+

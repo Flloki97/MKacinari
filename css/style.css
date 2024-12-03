@@ -108,7 +108,8 @@ nav.menu-container {
 
 .left-hero-side img {
   width: 60%;
-  margin-left: -50px;
+  margin-left: 0px;
+  margin-top: -80px;
 }
 
 .right-hero-side {
@@ -688,6 +689,10 @@ nav.menu-container,
   padding: 80px 50px;
 }
 
+.wrapper {
+  background-image: url('../img/bg/Group45.png');
+}
+
 /* .bio-sec-section::before {
   content: '';
   position: absolute;
@@ -874,6 +879,7 @@ nav.menu-container,
   flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
 }
 
 .veprat-wrapper {
@@ -881,13 +887,111 @@ nav.menu-container,
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .veprat-wrapper h5 {
   font-size: 20px;
 }
 
+.veprat-wrapper {
+  min-height: 300px;
+  position: relative;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: 175%;
+  /* background-size: cover; */
+}
+
+.veprat-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000000bd;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.vepra-1 {
+  background-image: url('../img/Dirigjenti_Mark_crop.jpg') !important;
+  transition: all 0.4s;
+}
+.vepra-1:hover,
+.vepra-2:hover,
+.vepra-3:hover,
+.vepra-4:hover,
+.vepra-5:hover,
+.vepra-6:hover,
+.vepra-7:hover,
+.vepra-8:hover,
+.vepra-9:hover,
+.vepra-10:hover{
+  background-size: 200%
+}
+.vepra-2 {
+  background-image: url('../img/img033-fotor-20241113191810.jpg');
+  transition: all 0.4s;
+}
+.vepra-3 {
+  background-image: url('../img/img044-fotor-20241113192342.jpg');
+  transition: all 0.4s;
+}
+.vepra-4 {
+  background-image: url('../img/img054-fotor-20241113193121.jpg');
+  transition: all 0.4s;
+}
+.vepra-5 {
+  background-image: url('../img/img520.jpg');
+  transition: all 0.4s;
+}
+.vepra-6 {
+  background-image: url('../img/img059-fotor-20241113193616.jpg');
+  transition: all 0.4s;
+}
+.vepra-7 {
+  background-image: url('../img/img013-fotor-2024111516543.jpg');
+  transition: all 0.4s;
+}
+.vepra-8 {
+  background-image: url('../img/img046-fotor-20241113192527.jpg');
+  transition: all 0.4s;
+}
+.vepra-9 {
+  background-image: url('../img/img035-fotor-20241113191930.jpg');
+  transition: all 0.4s;
+}
+.vepra-10 {
+  background-image: url('../img/img026-fotor-20241113191344.jpg');
+  transition: all 0.4s;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
 
 
 
