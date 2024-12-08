@@ -206,69 +206,31 @@
         </div>
         
       </div>
-      <!-- <div class="lista-e-veprave">
-        <div class="veprat-korale-lista">
-          <div class="veprat-wrapper vepra-1">
-            <h5 class="z-2">Bijtë e shqipes</h5>
-            <p class="z-2">Kantatë për kor mikst accapella </p>
-            <p class="z-2">Prishtinë, 1971</p>
-          </div>
-          <div class="veprat-wrapper vepra-2">
-            <h5 class="z-2">Zogu i Ohrit</h5>
-            <p class="z-2">Përpunim për kor mikst</p>
-            <p class="z-2">Prishtinë, 1966</p>
-          </div>
-          <div class="veprat-wrapper vepra-3">
-            <h5 class="z-2">Shamikuqja</h5>
-            <p class="z-2">Suitë me motive popullore, për kor mikst</p>
-            <p class="z-2">Prishtinë, 1971</p>
-          </div>
-          <div class="veprat-wrapper vepra-4">
-            <h5 class="z-2">Serenada</h5>
-            <p class="z-2">Përpunim për kor mikst</p>
-            <p class="z-2">Prishtinë, 1983</p>
-          </div>
-          <div class="veprat-wrapper vepra-5">
-            <h5 class="z-2">Drandofillja e vogël</h5>
-            <p class="z-2">Këngë popullore, përpunuar për kor mikst</p>
-            <p class="z-2">Prishtinë, 1972</p>
-          </div>
-          <div class="veprat-wrapper vepra-6">
-            <h5 class="z-2">Vendlindja ime</h5>
-            <p class="z-2">Pjesë korale</p>
-            <p class="z-2">Prishtinë, 1971</p>
-          </div>
-          <div class="veprat-wrapper vepra-7">
-            <h5 class="z-2">Kënga jonë</h5>
-            <p class="z-2">Këngë masash për kor mikst</p>
-            <p class="z-2">Prishtinë, 1984</p>
-          </div>
-          <div class="veprat-wrapper vepra-8">
-            <h5 class="z-2">Prishtinës heroike</h5>
-            <p class="z-2">Këngë masash për kor mikst</p>
-            <p class="z-2">Prishtinë, 1981</p>
-          </div>
-          <div class="veprat-wrapper vepra-9">
-            <h5 class="z-2">Puna e jonë</h5>
-            <p class="z-2">Këngë masash për kor mikst</p>
-            <p class="z-2">Prishtinë, 1984</p>
-          </div>
-          <div class="veprat-wrapper vepra-10">
-            <h5 class="z-2">Nënë o nanë</h5>
-            <p class="z-2">Për kor fëmijësh</p>
-            <p class="z-2">Prishtinë, 1984</p>
-          </div>
+      <div class="music-symbol">
+        <div class="pentagram-lines"></div>
+        <div class="pentagram-lines"></div>
+        <div class="pentagram-lines"></div>
+        <div class="pentagram-lines"></div>
+        <div class="pentagram-lines"></div>
+        <img src="img/music-key.png" alt="musickey" class="musickey" />
+      </div>
+      <footer>
+        <div class="logo-wrapper">
+          <h1>M.Kaçinari</h1>
         </div>
-      </div> -->
+        <div class="copyright-wrapper">
+          <p>©2024</p>
+        </div>
+      </footer>
      
     </main>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       var swiper2 = new Swiper(".mySwiper", {
-        slidesPerView: 5,
         spaceBetween: 40,
         freeMode: true,
         pagination: {
@@ -280,7 +242,22 @@
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         },
+        breakpoints: {
+          500: {
+            slidesPerView: 1, // Mobile view
+            spaceBetween: 10, // Smaller space between slides on mobile
+          },
+          768: {
+            slidesPerView: 2, // Tablet view
+            spaceBetween: 20, // Adjust spacing for tablets
+          },
+          1024: {
+            slidesPerView: 3, // Desktop view
+            spaceBetween: 40,
+          },
+        },
       });
+
     </script>
   </body>
 </html>
