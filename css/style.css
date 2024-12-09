@@ -83,7 +83,7 @@ nav.menu-container {
   background-size: contain;
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   margin-bottom: 30px;
   margin-top: 67px;
   position: relative;
@@ -109,7 +109,7 @@ nav.menu-container {
 .left-hero-side img {
   width: 66%;
   margin-left: 0px;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 
 .right-hero-side {
@@ -118,6 +118,7 @@ nav.menu-container {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 50%;
 }
 
 .line {
@@ -175,6 +176,16 @@ button:hover {
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
+}
+.activity-carousel .item {
+  transition: all 0.4s;
+  -webkit-box-shadow: 13px 10px 15px -9px rgba(33,33,33,1);
+  -moz-box-shadow: 13px 10px 15px -9px rgba(33,33,33,1);
+  box-shadow: 13px 10px 15px -9px rgba(33,33,33,1);
+}
+
+.activity-carousel a:hover .item {
+  box-shadow: none;
 }
 
 .item,
@@ -379,9 +390,8 @@ a {
 }
 
 .musickey {
-  width: 50px;
+  width: 60px;
   position: absolute;
-  background-color: #0c0c0c;
 }
 
 footer {
@@ -421,16 +431,16 @@ canvas {
   cursor: pointer;
   right: 70px;
   bottom: -20px;
-  border: 2px dotted #fff;
+  border: 2px dotted #4b4b4b;
   border-radius: 50%;
-  padding: 4px;
+  padding: 1px;
 }
 
 #dialog {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1100;
+  z-index: 99999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,6 +460,8 @@ canvas {
 .dialog-wrapper p {
   font-size: 5vw;
   padding-bottom: 15px;
+  display: flex;
+  color: #fff;
 }
 
 .button-wrapper {
@@ -457,10 +469,11 @@ canvas {
   gap: 30px;
 }
 
-.swiper {
+.swiper1 {
   width: 100%;
   height: 500px;
   margin: 80px 0px;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -480,6 +493,22 @@ canvas {
 .slide-3 {
   background: url("../img/MarkKacinari.png");
   background-position: top center !important;
+}
+
+.slide-4 {
+  background:url('../img/img046-fotor-20241113192527 (1).jpg');
+}
+
+.slide-7 {
+  background:url('../img/img019-fotor-2024111319125 (1).jpg');
+}
+
+.slide-5 {
+  background:url('../img/img021-fotor-20241113191310 (1).jpg');
+}
+
+.slide-6 {
+  background:url('../img/img027-fotor-20241113191418 (1).jpg');
 }
 
 .mobile-menu {
@@ -752,7 +781,18 @@ nav.menu-container,
   max-height: 400px;
   border-radius: 30px;
   position: relative;
+  transition: all 0.3s;
+  box-shadow: -30px -24px 15px -9px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: -30px -24px 15px -9px rgba(33, 33, 33, 1);
+  -moz-box-shadow: -30px -24px 15px -9px rgba(33, 33, 33, 1);
 }
+
+.left-side img:hover,
+.left-side-sec img:hover {
+  transform: translate(-22px, -17px) scale(1.01);
+  box-shadow: none;
+}
+
 
 .text-wrapper p {
   color: #fff;
@@ -807,8 +847,8 @@ nav.menu-container,
 /*************************** Veprimtaria CSS Start ***********************/
 
 .veprimtaria {
-  background-image: url('../img/bg/img033-fotor-20241113191810.jpg');
-  background-position: 10% 36%;
+  background-image: url('../img/img046-fotor-20241113192527 (1).jpg');
+  /* background-position: 10% 36%; */
 }
 
 .veprimtaria-main {
@@ -901,7 +941,11 @@ nav.menu-container,
 }
 
 .veprat-wrapper h5 {
-  font-size: 20px;
+  font-size: 32px;
+}
+
+.veprat-wrapper p {
+  font-size: 23px;
 }
 
 .veprat-wrapper {
@@ -985,7 +1029,7 @@ nav.menu-container,
   transition: all 0.4s;
 }
 
-.swiper {
+.swiper1 {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1079,6 +1123,27 @@ nav.menu-container,
 
 /* Mirenjohjet CSS End */
 
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 100%;
+  }
+  .bio-first-section, .bio-sec-section {
+    flex-direction: column;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+}
+
 
 @media (max-width: 716px) {
     .logo h1 {
@@ -1130,7 +1195,7 @@ nav.menu-container,
         height: 270px;
     }
 
-    .swiper {
+    .swiper1 {
         height: 300px;
     }
 
@@ -1353,10 +1418,6 @@ nav.menu-container,
   }
 }
 
-/* .bottom-sec {
-  background-image: url('../img/bg/key-notes (1).png');
-} */
-
 .bottom-sec::before {
   content: "";
   position: absolute;
@@ -1365,7 +1426,7 @@ nav.menu-container,
   width: 100%;
   height: 100%;
   background-image: url('../img/bg/key-notes (1).png');
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 1;
   background-repeat: space;
 }
@@ -1383,23 +1444,6 @@ nav.menu-container {
   border: 2px solid #323232;
   padding: 5px;
 }
-
-/* .swiper-slide {
-  width: auto; 
-  flex-shrink: 0; 
-}
-
-.swiper {
-  width: 100%; 
-  overflow: hidden;
-}
-
-
-@media (max-width: 500px) {
-  .swiper-slide {
-    width: 100%;
-  }
-} */
 
 
 

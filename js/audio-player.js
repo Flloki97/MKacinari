@@ -5,12 +5,12 @@ let opt = {
   width: c.offsetWidth,
   height: c.offsetHeight,
   midY: c.offsetHeight / 2,
-  points: 80,
+  points: 75,
   stretch: 10,
   sinHeight: 0,
   speed: -0.1,
-  strokeColor: "white",
-  strokeWidth: 1.5,
+  strokeColor: "#4b4b4b",
+  strokeWidth: 2,
   power: true, // Start animation by default
 };
 c.width = opt.width * 2;
