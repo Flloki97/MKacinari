@@ -76,15 +76,15 @@ nav.menu-container {
 }
 
 .hero-container {
-  height: calc(100vh - 115px);
+  /* height: calc(100vh - 115px); */
   background-image: url("../img/keyyy.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   align-items: center;
-  padding: 40px 0 0 0;
-  margin-bottom: 30px;
+  /* padding: 40px 0 0 0;
+  margin-bottom: 30px; */
   margin-top: 67px;
   position: relative;
 }
@@ -252,7 +252,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  margin-top: 75px;
+  /* margin-top: 75px; */
 }
 
 .activity-carousel {
@@ -956,7 +956,7 @@ nav.menu-container,
   font-size: 20px;
   border-radius: 20px;
   background-position: center;
-  background-size: 175%;
+  background-size: 100%;
   /* background-size: cover; */
 }
 
@@ -977,7 +977,7 @@ nav.menu-container,
 }
 
 .vepra-1 {
-  background-image: url('../img/Dirigjenti_Mark_crop.jpg') !important;
+  background-image: url('../img/1-c.jpg') !important;
   transition: all 0.4s;
 }
 .vepra-1:hover,
@@ -990,42 +990,42 @@ nav.menu-container,
 .vepra-8:hover,
 .vepra-9:hover,
 .vepra-10:hover{
-  background-size: 200%
+  background-size: 120%
 }
 .vepra-2 {
-  background-image: url('../img/img033-fotor-20241113191810.jpg');
+  background-image: url('../img/2.jpg');
   transition: all 0.4s;
 }
 .vepra-3 {
-  background-image: url('../img/img044-fotor-20241113192342.jpg');
+  background-image: url('../img/3.jpg');
   transition: all 0.4s;
 }
 .vepra-4 {
-  background-image: url('../img/img054-fotor-20241113193121.jpg');
+  background-image: url('../img/4.jpg');
   transition: all 0.4s;
 }
 .vepra-5 {
-  background-image: url('../img/img520.jpg');
+  background-image: url('../img/5.jpg');
   transition: all 0.4s;
 }
 .vepra-6 {
-  background-image: url('../img/img059-fotor-20241113193616.jpg');
+  background-image: url('../img/6.jpg');
   transition: all 0.4s;
 }
 .vepra-7 {
-  background-image: url('../img/img013-fotor-2024111516543.jpg');
+  background-image: url('../img/7.jpg');
   transition: all 0.4s;
 }
 .vepra-8 {
-  background-image: url('../img/img046-fotor-20241113192527.jpg');
+  background-image: url('../img/8.jpg');
   transition: all 0.4s;
 }
 .vepra-9 {
-  background-image: url('../img/img035-fotor-20241113191930.jpg');
+  background-image: url('../img/9.jpg');
   transition: all 0.4s;
 }
 .vepra-10 {
-  background-image: url('../img/img026-fotor-20241113191344.jpg');
+  background-image: url('../img/10.jpg');
   transition: all 0.4s;
 }
 
@@ -1254,6 +1254,84 @@ nav.menu-container,
     }
 }
 
+@media (max-width: 1245px) {
+  .left-hero-side {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .right-hero-side h2 {
+    font-size: 4em;
+  }
+}
+
+.bottom-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg/key-notes (1).png');
+  opacity: 0.1;
+  z-index: 1;
+  background-repeat: space;
+}
+
+.yt-vid-wrapper iframe {
+  border: 2px solid #323232;
+  padding: 5px;
+}
+
+@media (max-width: 878px) {
+  .right-hero-side h2 {
+    font-size: 3em;
+  }
+  
+  .title {
+    padding: 0 0 0 0;
+  }
+
+  .item, .overlay-item {
+    width: 300px;
+    height: 310px;
+  }
+
+  .left-side,
+  .left-side-wrapper {
+    width: 100%;
+  }
+
+  .left-side img, .left-side-sec img {
+    max-height: 380px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .right-side, .right-side-sec {
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .bio-first-section, .bio-sec-section {
+    padding: 40px 50px;
+  }
+
+  .bottom-sec::before {
+    background-repeat: repeat;
+  }
+
+}
+
+@media (max-width: 787px) {
+  .left-hero-side {
+    margin-top: 70px;
+  }
+
+}
 
 @media (max-width: 500px) {
   .hero-container {
@@ -1418,18 +1496,7 @@ nav.menu-container,
   }
 }
 
-.bottom-sec::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/bg/key-notes (1).png');
-  opacity: 0.1;
-  z-index: 1;
-  background-repeat: space;
-}
+
 
 .left-side-wrapper,
 .right-side {
@@ -1440,10 +1507,7 @@ nav.menu-container {
   z-index: 9999 !important;
 }
 
-.yt-vid-wrapper iframe {
-  border: 2px solid #323232;
-  padding: 5px;
-}
+
 
 
 
