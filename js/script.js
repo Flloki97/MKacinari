@@ -80,3 +80,65 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+TweenMax.staggerFrom(".leFadeIn span", 1, {autoAlpha:0, ease: Power4.easeIn}, 0.2);
+
+// TweenMax.staggerFrom(".leFadeIn span", 1, {autoAlpha:0, ease: Power4.easeIn}, 0.2);
+
+// Function to trigger animation
+// function animateElement(entries, observer) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       TweenMax.staggerFrom(".leFadeInBottom span", 1, {
+//         y: "100%",
+//         autoAlpha: 0,
+//         delay: 0.3,
+//         ease: Power4.easeOut
+//       }, 0.2);
+
+//       // Unobserve the element after the animation has started
+//       // observer.unobserve(entry.target);
+//     }
+//   });
+// }
+
+// Set up the observer
+// const observer = new IntersectionObserver(animateElement, {
+//   threshold: 0.8 // Adjust this value to control how much of the element must be visible
+// });
+
+// Select the target element
+// const target = document.querySelector(".leFadeInBottom");
+// if (target) {
+//   observer.observe(target);
+// }
+
+
+function setupPlayer(playButtonId, audioId, rippleId, playIconId) {
+  const playButton = document.getElementById(playButtonId);
+  const audio = document.getElementById(audioId);
+  const ripple = document.getElementById(rippleId);
+  const playIcon = document.getElementById(playIconId);
+
+  playButton.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playIcon.src = './img/icons/pause.png'; // Switch to pause image
+      ripple.style.animation = 'ripple-animation 0.8s infinite';
+    } else {
+      audio.pause();
+      playIcon.src = './img/icons/play.png'; // Switch back to play image
+      ripple.style.animation = 'none';
+    }
+  });
+}
+
+setupPlayer('playButton1', 'audio1', 'ripple1', 'playIcon1');
+setupPlayer('playButton2', 'audio2', 'ripple2', 'playIcon2');
+setupPlayer('playButton3', 'audio3', 'ripple3', 'playIcon3');
+setupPlayer('playButton4', 'audio4', 'ripple4', 'playIcon4');
+setupPlayer('playButton5', 'audio5', 'ripple5', 'playIcon5');
+setupPlayer('playButton6', 'audio6', 'ripple6', 'playIcon6');
+setupPlayer('playButton7', 'audio7', 'ripple7', 'playIcon7');
+setupPlayer('playButton8', 'audio8', 'ripple8', 'playIcon8');
+

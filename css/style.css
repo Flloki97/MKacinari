@@ -980,18 +980,7 @@ nav.menu-container,
   background-image: url('../img/1-c.jpg') !important;
   transition: all 0.4s;
 }
-.vepra-1:hover,
-.vepra-2:hover,
-.vepra-3:hover,
-.vepra-4:hover,
-.vepra-5:hover,
-.vepra-6:hover,
-.vepra-7:hover,
-.vepra-8:hover,
-.vepra-9:hover,
-.vepra-10:hover{
-  background-size: 120%
-}
+
 .vepra-2 {
   background-image: url('../img/2.jpg');
   transition: all 0.4s;
@@ -1027,6 +1016,32 @@ nav.menu-container,
 .vepra-10 {
   background-image: url('../img/10.jpg');
   transition: all 0.4s;
+}
+
+.vepra-1,
+.vepra-2,
+.vepra-3,
+.vepra-4,
+.vepra-5,
+.vepra-6,
+.vepra-7,
+.vepra-8,
+.vepra-9,
+.vepra-10{
+  background-size: 130%
+}
+
+.vepra-1:hover,
+.vepra-2:hover,
+.vepra-3:hover,
+.vepra-4:hover,
+.vepra-5:hover,
+.vepra-6:hover,
+.vepra-7:hover,
+.vepra-8:hover,
+.vepra-9:hover,
+.vepra-10:hover{
+  background-size: 150%
 }
 
 .swiper1 {
@@ -1507,7 +1522,103 @@ nav.menu-container {
   z-index: 9999 !important;
 }
 
+/* .leFadeInRight span { animation-name: leFadeInRight }
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to { opacity: 1 }
+} */
 
+/* .leFadeInBottom span { animation-name: leFadeInBottom }
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
 
+ */
 
+ .audio-player-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.player-wrapper {
+ max-width: 50%;
+}
+
+.player-wrapper h3 {
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.player-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* width: 150px;
+  height: 150px; */
+  margin: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.play-button {
+  position: relative;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  padding: 15px 10px;
+}
+
+.play-button:hover {
+  background-color: #101010;
+  border: 2px solid #484848;
+}
+
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: none;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
 
