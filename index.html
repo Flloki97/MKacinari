@@ -6,6 +6,7 @@
     <title>Mark Kaçinari - Kompozitor</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
@@ -52,10 +53,13 @@
         <div class="right-hero-side">
           <span class="line"></span>
           <!-- <h2>Mark Kaçinari</h2> -->
-          <div class="cssanimation leFadeIn" style="font-size: 70px;"> Mark Kaçinari </div>
-          <p>Kompozitor | Pedagog | Dirigjent</p>
-          <p>1935 - 1985</p>
-          <a href="/biografia.html">
+          <div id="animatedText" style="font-size: 70px;">
+            <span style="opacity: 0;">M</span><span style="opacity: 0;">a</span><span style="opacity: 0;">r</span><span style="opacity: 0;">k</span>
+            <span style="opacity: 0;"> </span><span style="opacity: 0;">K</span><span style="opacity: 0;">a</span><span style="opacity: 0;">ç</span><span style="opacity: 0;">i</span><span style="opacity: 0;">n</span><span style="opacity: 0;">a</span><span style="opacity: 0;">r</span><span style="opacity: 0;">i</span>
+          </div>
+          <p class="animated-element animate__animated">Kompozitor | Pedagog | Dirigjent</p>
+          <p class="animated-element animate__animated">1935 - 1985</p>
+          <a href="/biografia.html" class="animated-element animate__animated">
             <button>Lexo Biografin</button>
           </a>
         </div>
@@ -66,9 +70,9 @@
         </div>
       </div>
       <div class="activity-container">
-        <h2 class="title">Veprimtaria</h2>
+        <h2 class="title animated-element animate__animated">Veprimtaria</h2>
         <div class="activity-carousel">
-          <a href="#">
+          <a href="#" class="animated-element animate__animated">
             <div class="item item-1">
               <div class="overlay-item">
                 <h4>Bijtë e Shqipes</h4>
@@ -79,7 +83,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="animated-element animate__animated">
             <div class="item item-2">
               <div class="overlay-item">
                 <h4>Zogu i Ohrit</h4>
@@ -88,7 +92,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="animated-element animate__animated">
             <div class="item item-3">
               <div class="overlay-item">
                 <h4>Shamikuqja</h4>
@@ -100,12 +104,12 @@
             </div>
           </a>
         </div>
-        <a href="/veprimtaria.html">
+        <a href="/veprimtaria.html" class="animated-element animate__animated">
           <button>Shiko Veprat</button>
         </a>
       </div>
       <div class="audio-player-wrapper">
-        <div class="player-wrapper">
+        <div class="player-wrapper animated-element animate__animated">
           <div class="player-container">
             <div class="ripple" id="ripple1"></div>
             <button id="playButton1" class="play-button">
@@ -115,7 +119,7 @@
           </div>
           <h3>SHAMIKUQJA</h3>
         </div>
-        <div class="player-wrapper">
+        <div class="player-wrapper animated-element animate__animated">
           <div class="player-container">
             <div class="ripple" id="ripple2"></div>
             <button id="playButton2" class="play-button">
@@ -125,7 +129,7 @@
           </div>
           <h3>VALLJA E BARIUT</h3>
         </div>
-        <div class="player-wrapper">
+        <div class="player-wrapper animated-element animate__animated">
           <div class="player-container">
             <div class="ripple" id="ripple3"></div>
             <button id="playButton3" class="play-button">
@@ -135,7 +139,7 @@
           </div>
           <h3>FYELLI I BARIUT</h3>
         </div>
-        <div class="player-wrapper">
+        <div class="player-wrapper animated-element animate__animated">
           <div class="player-container">
             <div class="ripple" id="ripple4"></div>
             <button id="playButton4" class="play-button">
@@ -148,17 +152,17 @@
       </div>
       <div class="activity-onl-container">
         <div class="bcg-line">
-          <div class="line-item">
+          <div class="line-item animated-element animate__animated">
             <h1>10</h1>
             <span class="circle"></span>
             <p>Vepra Korale</p>
           </div>
-          <div class="line-item">
+          <div class="line-item animated-element animate__animated">
             <h1>7</h1>
             <span class="circle"></span>
             <p>Muzik dhome dhe solistikë</p>
           </div>
-          <div class="line-item">
+          <div class="line-item animated-element animate__animated">
             <h1>5</h1>
             <span class="circle"></span>
             <p>Libra</p>
@@ -181,9 +185,9 @@
         </div>
       </div>
       <div class="certifications-container">
-        <h1 class="title">Mirënjohjet</h1>
+        <h1 class="title animated-element animate__animated">Mirënjohjet</h1>
         <div class="certf-wrapper">
-          <div class="certf-item">
+          <div class="certf-item animated-element animate__animated">
             <img src="img/conductor.png" alt="icon" />
             <h3>
               Shpërblim i dhënë nga Kuvendi i Komunës Prishtinë për përpjekje të
@@ -191,7 +195,7 @@
             </h3>
             <p>Nëntor 1971</p>
           </div>
-          <div class="certf-item">
+          <div class="certf-item animated-element animate__animated">
             <img src="img/note.png" alt="icon" />
             <h3>
               Shpërblim i dhënë nga Kuvendi i Komunës Prishtinë për përpjekje të
@@ -199,7 +203,7 @@
             </h3>
             <p>Nëntor 1971</p>
           </div>
-          <div class="certf-item">
+          <div class="certf-item animated-element animate__animated">
             <img src="img/classic.png" alt="icon" />
             <h3>
               Shpërblim i dhënë nga Kuvendi i Komunës Prishtinë për përpjekje të
@@ -231,7 +235,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script type="text/javascript" src="./js/cssanimation-gsap.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/audio-player.js"></script>
-   
+    <script src="js/dialog.js"></script>
+    <script src="js/audio-player.js"></script>   
+    <script src="js/animation.js"></script>
   </body>
 </html>

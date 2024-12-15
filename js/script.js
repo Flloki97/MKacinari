@@ -57,63 +57,6 @@ $('.menu').click(function() {
   }
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dialog = document.getElementById("dialog");
-  const yesButton = document.getElementById("yesButton");
-  const noButton = document.getElementById("noButton");
-
-  // Show the dialog and disable scrolling
-  dialog.style.display = "flex";
-  document.body.style.overflow = "hidden";
-
-  // Event listeners for the buttons
-  yesButton.addEventListener("click", function () {
-    dialog.style.display = "none"; // Hide the dialog
-    document.body.style.overflow = ""; // Restore scrolling
-  });
-
-  noButton.addEventListener("click", function () {
-    dialog.style.display = "none"; // Hide the dialog
-    document.body.style.overflow = ""; // Restore scrolling
-  });
-});
-
-
-TweenMax.staggerFrom(".leFadeIn span", 1, {autoAlpha:0, ease: Power4.easeIn}, 0.2);
-
-// TweenMax.staggerFrom(".leFadeIn span", 1, {autoAlpha:0, ease: Power4.easeIn}, 0.2);
-
-// Function to trigger animation
-// function animateElement(entries, observer) {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       TweenMax.staggerFrom(".leFadeInBottom span", 1, {
-//         y: "100%",
-//         autoAlpha: 0,
-//         delay: 0.3,
-//         ease: Power4.easeOut
-//       }, 0.2);
-
-//       // Unobserve the element after the animation has started
-//       // observer.unobserve(entry.target);
-//     }
-//   });
-// }
-
-// Set up the observer
-// const observer = new IntersectionObserver(animateElement, {
-//   threshold: 0.8 // Adjust this value to control how much of the element must be visible
-// });
-
-// Select the target element
-// const target = document.querySelector(".leFadeInBottom");
-// if (target) {
-//   observer.observe(target);
-// }
-
-
 function setupPlayer(playButtonId, audioId, rippleId, playIconId) {
   const playButton = document.getElementById(playButtonId);
   const audio = document.getElementById(audioId);
@@ -141,4 +84,3 @@ setupPlayer('playButton5', 'audio5', 'ripple5', 'playIcon5');
 setupPlayer('playButton6', 'audio6', 'ripple6', 'playIcon6');
 setupPlayer('playButton7', 'audio7', 'ripple7', 'playIcon7');
 setupPlayer('playButton8', 'audio8', 'ripple8', 'playIcon8');
-
