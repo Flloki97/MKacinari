@@ -187,7 +187,9 @@ button:hover {
 .activity-carousel a:hover .item {
   box-shadow: none;
 }
-
+.activity-carousel a .item:hover {
+  transform: scale(1.05);
+}
 .item,
 .overlay-item {
   width: 335px;
@@ -244,7 +246,7 @@ a {
 }
 
 .activity-carousel a:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .activity-container {
@@ -430,7 +432,8 @@ canvas {
   height: 60px;
   cursor: pointer;
   right: 70px;
-  bottom: -20px;
+  /* bottom: 30px; */
+  bottom: -130px;
   border: 2px dotted #4b4b4b;
   border-radius: 50%;
   padding: 1px;
@@ -471,7 +474,7 @@ canvas {
 
 .swiper1 {
   width: 100%;
-  height: 500px;
+  height: 550px;
   margin: 80px 0px;
   overflow: hidden;
 }
@@ -948,118 +951,124 @@ nav.menu-container,
   font-size: 23px;
 }
 
-.veprat-wrapper {
-  min-height: 300px;
-  position: relative;
-  justify-content: center;
-  gap: 20px;
-  font-size: 20px;
-  border-radius: 20px;
-  background-position: center;
-  background-size: 100%;
-  /* background-size: cover; */
-}
-
-.veprat-wrapper::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #000000bd;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.z-2 {
-  z-index: 2;
-}
-
-.vepra-1 {
-  background-image: url('../img/1-c.jpg') !important;
-  transition: all 0.4s;
-}
-
-.vepra-2 {
-  background-image: url('../img/2.jpg');
-  transition: all 0.4s;
-}
-.vepra-3 {
-  background-image: url('../img/3.jpg');
-  transition: all 0.4s;
-}
-.vepra-4 {
-  background-image: url('../img/4.jpg');
-  transition: all 0.4s;
-}
-.vepra-5 {
-  background-image: url('../img/5.jpg');
-  transition: all 0.4s;
-}
-.vepra-6 {
-  background-image: url('../img/6.jpg');
-  transition: all 0.4s;
-}
-.vepra-7 {
-  background-image: url('../img/7.jpg');
-  transition: all 0.4s;
-}
-.vepra-8 {
-  background-image: url('../img/8.jpg');
-  transition: all 0.4s;
-}
-.vepra-9 {
-  background-image: url('../img/9.jpg');
-  transition: all 0.4s;
-}
-.vepra-10 {
-  background-image: url('../img/10.jpg');
-  transition: all 0.4s;
-}
-
-.vepra-1,
-.vepra-2,
-.vepra-3,
-.vepra-4,
-.vepra-5,
-.vepra-6,
-.vepra-7,
-.vepra-8,
-.vepra-9,
-.vepra-10{
-  background-size: 130%
-}
-
-.vepra-1:hover,
-.vepra-2:hover,
-.vepra-3:hover,
-.vepra-4:hover,
-.vepra-5:hover,
-.vepra-6:hover,
-.vepra-7:hover,
-.vepra-8:hover,
-.vepra-9:hover,
-.vepra-10:hover{
-  background-size: 150%
-}
-
-.swiper1 {
+/* Swiper Container */
+.swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+/* Swiper Wrapper */
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for sliding */
 }
 
-.swiper-slide img {
-  display: block;
+.swiper2 {
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
   width: 100%;
+  height: 400px; /* Set a height for the slides */
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay for the slide content */
+.veprat-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  height: 300px;  
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+}
+
+.veprat-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #00000075;
+}
+
+/* Slide title and content styling */
+.veprat-wrapper h5 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.veprat-wrapper p {
+  font-size: 23px;
+  color: #fff;
+}
+
+/* Background images */
+.vepra-1 {
+  background-image: url('../img/1-c.jpg');
+}
+.vepra-2 {
+  background-image: url('../img/2.jpg');
+}
+.vepra-3 {
+  background-image: url('../img/3.jpg');
+}
+.vepra-4 {
+  background-image: url('../img/4.jpg');
+}
+.vepra-5 {
+  background-image: url('../img/5.jpg');
+}
+.vepra-6 {
+  background-image: url('../img/6.jpg');
+}
+.vepra-7 {
+  background-image: url('../img/7.jpg');
+}
+.vepra-8 {
+  background-image: url('../img/8.jpg');
+}
+.vepra-9 {
+  background-image: url('../img/9.jpg');
+}
+.vepra-10 {
+  background-image: url('../img/10.jpg');
+}
+
+/* Hover effect for background size change */
+/* .vepra-1:hover, .vepra-2:hover, .vepra-3:hover,
+.vepra-4:hover, .vepra-5:hover, .vepra-6:hover,
+.vepra-7:hover, .vepra-8:hover, .vepra-9:hover,
+.vepra-10:hover {
+  background-size: 150%;
+  transition: background-size 0.3s ease; 
+} */
+
+/* Z-index management for content */
+.z-2 {
+  z-index: 2;
+}
+
+/* Pagination style */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /*************************** Veprimtaria CSS End ***********************/
@@ -1650,4 +1659,51 @@ nav.menu-container {
 /* Add hover effects for the thumb */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Darker color when hovering */
+}
+
+@media (min-width: 448px) and (max-width: 650px) {
+  .hero-container {
+    flex-direction: column;
+  }
+ 
+  .left-hero-side {
+    width: 100%;
+  }
+
+  .right-hero-side {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .hero-container {
+    background-size: 50%;
+    background-position: right top;
+  }
+}
+
+@media (max-width: 448px) {
+  .player-wrapper {
+    width: 45%;
+    min-height: 165px;
+  }
+}
+
+@media (max-width: 550px) {
+  .dialog-wrapper p {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.test {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.right-hero-side svg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0.5;
 }
