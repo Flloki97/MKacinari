@@ -1707,3 +1707,8 @@ nav.menu-container {
   width: 100%;
   opacity: 0.5;
 }
+
+footer #copyright {
+  font-family: 'HelveticaC';
+  font-size: 20px;
+}

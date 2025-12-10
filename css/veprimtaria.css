@@ -73,12 +73,28 @@
   border-radius: 15px;
 }
 
-.collegium-cantorum {
+/* .collegium-cantorum {
+  padding: 70px 0;
+} */
+
+.kori-wrapper {
   padding: 70px 0;
 }
 
 .collegium-cantorum h3 {
   text-align: center;
+}
+
+.kori-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.pad-tp-30 {
+  padding-top: 30px;
 }
 
 @media (max-width: 787px) {
