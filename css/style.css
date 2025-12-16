@@ -1712,3 +1712,9 @@ footer #copyright {
   font-family: 'HelveticaC';
   font-size: 20px;
 }
+
+@media (max-width: 500px) {
+  .footer #copyright {
+    font-size: 14px;
+  }
+}
