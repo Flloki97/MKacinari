@@ -78,3 +78,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const year = new Date().getFullYear();
 document.getElementById("copyright").textContent = `fbcreativee ©${year}`;
+
+window.addEventListener('load', function() {
+    // If you have a specific Yes/No selection, 
+    // wrap this line inside that logic:
+    showPopup();
+});
+
+function showPopup() {
+    const popup = document.getElementById('imagePopup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    popup.style.display = 'block';
+
+    // Close when clicking 'X'
+    closeBtn.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    // Close when clicking anywhere on the dark background
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+}
